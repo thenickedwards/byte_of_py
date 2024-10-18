@@ -71,3 +71,19 @@ while True:
     if my_hp <= 0:
         print(f"The battle is over and the {character} has been defeated by the Dragon. Better luck next time 🔥")
         break
+
+"""
+Optional Challenges for v1:
+Choose character by typing class (case_insensitive)  or number.
+Add "Dwarf" class.
+Write exit game option.
+After game over, ask if they want to play again.
+
+Optional Challenges for v2:
+Roll to hit, roll for damage.
+Attack bonuses.
+Damage relative to random d20 roll.
+HP randomizes within range.
+BBEG randomizes.
+Classes as chraracter types.
+"""
