@@ -13,8 +13,6 @@ In the second, nested for loop, change the range's stop value from 2 to i.
 Decrease the indentation for the print statement inside the second for loop, so that it is a part of the first for loop instead of the second. 
 '''
         
-        
-        
 stars = ""
 for i in range(0, 5, 1):
     for j in range(0, i, 1):
