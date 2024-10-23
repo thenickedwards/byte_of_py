@@ -102,7 +102,8 @@ while True:
     if play_again.lower() == "x" or play_again.lower() == "n":
         break
     elif play_again.lower() == "y":
-        os.execl(sys.executable, sys.executable, *sys.argv)
+        os.execl(sys.executable, sys.executable, *sys.argv) 
+        # not a best practice but wanted to see if this would work :)
     else:
         continue
 
