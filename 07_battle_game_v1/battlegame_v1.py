@@ -56,9 +56,9 @@ while True:
         my_damage = human_damage
         break
     elif pc_choice == "4" or pc_choice.lower() == "dwarf":
-        character = human
-        my_hp = human_hp
-        my_damage = human_damage
+        character = dwarf
+        my_hp = dwarf_hp
+        my_damage = dwarf_damage
         break
     elif pc_choice.lower() == "x":
         exit()
