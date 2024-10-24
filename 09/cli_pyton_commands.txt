@@ -1,0 +1,25 @@
+(byte_of_py) ➜  byte_of_py git:(main) ✗ python
+Python 3.11.1 (v3.11.1:a7a450f84a, Dec  6 2022, 15:24:06) [Clang 13.0.0 (clang-1300.0.29.30)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> year = 2021
+>>> print("The year is " + str(year))
+The year is 2021
+>>> int(1.11)
+1
+>>> float(5)
+5.0
+>>> str(5)
+'5'
+>>> int("5")
+5
+>>> int("5.5")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: invalid literal for int() with base 10: '5.5'
+>>> float("5")
+5.0
+>>> float("5.5")
+5.5
+>>> quit()
+
+ctrl+z also works to quit
