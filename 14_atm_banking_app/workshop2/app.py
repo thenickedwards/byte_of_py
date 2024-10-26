@@ -5,6 +5,8 @@ name = ""
 pin = ""
 balance = 0.00
 
+
+### MENUS
 def start_menu():
     print("")
     print("          === Automated Teller Machine ===          ")
@@ -63,11 +65,12 @@ def login():
 
 
 
-
+##### MAIN APPLICATION BELOW #####
 
 def main_atm():
     global name
     global pin
+    global balance
     start_menu()
     while True:
         start_choice = input("Enter 1 to register or 2 to login: ")
