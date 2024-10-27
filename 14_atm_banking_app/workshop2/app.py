@@ -1,7 +1,9 @@
-from banking_pkg.account import show_balance, deposit, withdraw, logout
 import sys
 import re
 import time
+import json
+from banking_pkg.account import show_balance, deposit, withdraw, logout
+
 
 name = ""
 pin = ""
@@ -27,6 +29,13 @@ def atm_menu(name):
     print("------------------------------------------")
     print("| 3.    Withdraw    | 4.    Logout       |")
     print("------------------------------------------")
+
+def loading_bar():
+    loading_bar = "Loading menu..."
+    for i in loading_bar:
+        sys.stdout.write(i)
+        sys.stdout.flush()
+        time.sleep(0.25)
 
 ### AUTHENTICATION v1
 def register():
@@ -63,15 +72,8 @@ def login():
         else: 
             print("\n   Invalid Credentials.\n  We cannot verify the name and PIN. Please try to login again.")
             continue
-    
-def loading_bar():
-    loading_bar = "Loading menu..."
-    for i in loading_bar:
-        sys.stdout.write(i)
-        sys.stdout.flush()
-        time.sleep(0.25)
 
-        
+
 
 ##### MAIN APPLICATION BELOW #####
 
@@ -110,20 +112,16 @@ def main_atm():
             print(f"\nThanks {name}! Your account now shows a balance of ${balance:.2f}\n\n")
             loading_bar()
             continue
-        
         elif menu_choice == "3":
             balance = withdraw(balance=balance)
             print(f"\nThanks {name}! Your account now shows a balance of ${balance:.2f}\n\n")
             loading_bar()
             continue
-        
         elif menu_choice == "4":
             logout(name)
-            #TODO: fix this :D
             name=""
             pin=""
             main_atm()
-        
         else:
             print("\n   Sorry, I can't understand that choice.\n  Please choose to register or login.")
             continue
