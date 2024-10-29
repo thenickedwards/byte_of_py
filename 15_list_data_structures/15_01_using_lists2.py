@@ -29,7 +29,8 @@ print("Washington" not in states)   # False
 states2 = ['Arizona', 'Ohio', 'Louisiana']
 best_states = states + states2
 # print(best_states)
-['Washington', 'Oregon', 'California', 'Arizona', 'Ohio', 'Louisiana']
+#          ['Washington', 'Oregon', 'California', 'Arizona',  'Ohio', 'Louisiana' ]
+# indices  [0,             1,        2,            3,          4,      5          ]
 
 # slicing lists
 print(best_states[1:3])     # ['Oregon', 'California']
