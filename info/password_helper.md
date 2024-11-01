@@ -1,4 +1,6 @@
-# Password Helper Brainstorm
+# Python Password Pal - Brainstorm
+
+Possible name? _Whipped Pass Py_
 
 ## Introduction to Method
 
