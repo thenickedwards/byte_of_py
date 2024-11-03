@@ -5,6 +5,7 @@ zoo_doo_animals_alt = "rhino", "zebra", "hippo", "tiger"
 # parentheses not required (when not empty) but recomended
 
 empty_tuple = ()
+empty_tuple2 = tuple()              # same
 print("empty_tuple", empty_tuple)
 print(type(empty_tuple))
 
