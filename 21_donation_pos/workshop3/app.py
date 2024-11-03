@@ -27,7 +27,7 @@ while True:
     user_choice = input("Choose an option by entering a number: ")
     
     # login
-    if user_choice == "1":
+    if user_choice == "1" or user_choice.lower() == "login":
         username = input("Enter username: ").lower()
         password = input("Enter password: ")
         authorized_user = login(database=database, username=username, password=password)
@@ -37,7 +37,7 @@ while True:
         continue
     
     # register
-    elif user_choice == "2":
+    elif user_choice == "2" or user_choice.lower() == "register":
         username = input("Register username: ").lower()
         password = input("Register password: ")
         registered_user = register(database=database, username=username)
@@ -49,7 +49,7 @@ while True:
         continue
     
     # donate
-    elif user_choice == "3":
+    elif user_choice == "3" or user_choice.lower() == "donations":
         if authorized_user == "":
             print("❌ You must be logged in to donate.\n")
         else:
@@ -59,24 +59,30 @@ while True:
         continue
 
     # display donations
-    elif user_choice == "4":
+    elif user_choice == "4" or user_choice.lower() == "show donations":
         show_donations(donations=donations)
         user_choice == ""   #reset
         continue
     
-    # quit
-    elif user_choice == "5":
+    # logout
+    elif user_choice == "5" or user_choice.lower() == "logout":
         authorized_user = ""
         print("Thanks for using Roundup! to donate and have a wonderful day!")
         continue
     
-    elif user_choice.lower() == "q" or user_choice.lower() == "x":
+    # quit application
+    elif user_choice.lower() == "q" or user_choice.lower() == "x" or user_choice.lower() == "quit" or user_choice.lower() == "exit":
         loading_exit = "\n\nQuitting..."
         for i in loading_exit:
             sys.stdout.write(i)
             sys.stdout.flush()
             time.sleep(0.25)
         quit()
+    
+    # invalid entry handling
+    else:
+        print(f"\n  ❌ ERROR: Sorry, I didn't understand your choice. \n Let's try again.")
+        print(f"\n\n  Returning to main menu...")
     
     
 
