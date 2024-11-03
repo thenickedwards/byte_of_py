@@ -5,6 +5,8 @@ zoo_doo_animals_alt = "rhino", "zebra", "hippo", "tiger"
 # parentheses not required (when not empty) but recomended
 
 empty_tuple = ()
+print("empty_tuple", empty_tuple)
+print(type(empty_tuple))
 
 one_item_tuple= ("lion",)   
 # note: trailing comma required

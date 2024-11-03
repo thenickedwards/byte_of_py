@@ -6,9 +6,9 @@ from donations_pkg.user import login, register
 
 # os and global varaibles
 roundup_admin = os.environ['roundup_admin']
-roundup_pasword = os.environ['roundup_pw']
+roundup_password = os.environ['roundup_pw']
 database = {
-             roundup_admin: roundup_pasword
+             roundup_admin: roundup_password
             }
 
 donations = []
