@@ -15,8 +15,8 @@ def show_homepage():
 def donate(username):
     while True:
         donation_amt = input("Enter amount to donate: ")
-        donation_amt = round(int(donation_amt), 2)
-        confirm_amt = input(f"\n\nEnter Y to confirm a donation of: ${donation_amt:.2f} or enter N to cancel: \n\n")
+        donation_amt = round(float(donation_amt), 2)
+        confirm_amt = input(f"\n\nEnter Y to confirm a donation of: ${donation_amt:.2f} or enter N to cancel: ")
         if confirm_amt.lower() != "y":
             continue
         else:

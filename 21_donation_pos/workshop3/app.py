@@ -12,16 +12,16 @@ database = {
             }
 
 donations = []
-authorized_user = ''
+authorized_user = ""
 
 while True:
     ### initialize app
     show_homepage()
     # check auth state
     if authorized_user == "":
-        print("  You must be logged in to donate.\n")
+        print("\n🔴   You must be logged in to donate.\n")
     else:
-        print(f"Logged in as: {authorized_user}")
+        print(f"\n🟢  Logged in as: {authorized_user}")
 
     ### user selection from start menu
     user_choice = input("Choose an option by entering a number: ")
