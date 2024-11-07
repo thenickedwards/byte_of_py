@@ -13,6 +13,7 @@ class Stack:
     def size(self):
         return len(self.items)
 
+#####
 
 stack = Stack()
 stack.push(1)
