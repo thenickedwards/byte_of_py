@@ -32,8 +32,11 @@ class IceCreamShop:
             scoops = int(scoops)
             if scoops < 1 or scoops > 3:
                 raise ValueError("Sorry, I can only take an order for 1, 2, or 3 scoops.")
-        except ValueError:
-            raise ValueError("Please enter a valid number of scoops.")
+        # except ValueError:
+        #     raise ValueError("Please enter a valid number of scoops.")
+        except ValueError as e:
+            print(e, "❌ I encountered an error and was not able to place your order. Please try again.")
+            return
         # enqueue order if no errors in try/except
         else:
             print('Order created!')
