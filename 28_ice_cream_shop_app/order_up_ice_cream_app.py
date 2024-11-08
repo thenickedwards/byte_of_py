@@ -14,6 +14,7 @@ class Queue:
         return self.items.pop(0)
 
     def show_queue(self):
+        # TODO: make this a nice string
         print(self.items)
 
 #####
@@ -32,19 +33,19 @@ class IceCreamShop:
             scoops = int(scoops)
             if scoops < 1 or scoops > 3:
                 raise ValueError("Sorry, I can only take an order for 1, 2, or 3 scoops.")
-        # except ValueError:
-        #     raise ValueError("Please enter a valid number of scoops.")
         except ValueError as e:
-            print(e, "❌ I encountered an error and was not able to place your order. Please try again.")
+            print(e, "\n❌ I encountered an error and was not able to place your order. Please try again.")
             return
         # enqueue order if no errors in try/except
         else:
+            new_order = {"customer": customer, "flavor": flavor, "scoops": scoops}
+            self.orders.enqueue(new_order)
             print('Order created!')
     
-    def show_all_orders():
-        pass
+    def show_all_orders(self):
+        self.orders.show_queue()
     
-    def next_order():
+    def next_order(self):
         pass
 
 #####
@@ -54,6 +55,6 @@ shop.take_order("Zachary", "pistachio", 3)
 shop.take_order("Marcy", "mint chip", 1)
 shop.take_order("Leopold", "vanilla", 2)
 shop.take_order("Bruce", "rocky road", 0)
-# shop.show_all_orders()
+shop.show_all_orders()
 # shop.next_order()
 # shop.show_all_orders()
