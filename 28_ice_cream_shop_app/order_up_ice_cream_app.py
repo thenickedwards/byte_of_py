@@ -14,8 +14,7 @@ class Queue:
         return self.items.pop(0)
 
     def show_queue(self):
-        # TODO: make this a nice string
-        print(self.items)
+        # print(self.items)
         print("All Pending Ice Cream Orders:")
         for i in self.items:
             print("Customer:", i["customer"], " -- flavor: ",
