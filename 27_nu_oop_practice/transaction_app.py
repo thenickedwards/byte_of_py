@@ -85,8 +85,8 @@ class User:
 #     print(u.username, u.password, u.pin)
 
 class BankUser(User):
-    def __init__(self, username, pin, password):
-        super().__init__(username, pin, password)
+    def __init__(self, username, password, pin):
+        super().__init__(username, password, pin)
         self.balance = 0
         self.holding = False
     
