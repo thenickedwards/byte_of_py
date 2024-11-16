@@ -90,25 +90,6 @@ def guess_random_num_binary(tries=5, start=0, stop=100, show_target=False):
     print(f"Sorry binary search is out of tries and failed to guess the number. \nAs you recall the number to guess was {target})")
 
 
-# EXAMPLES
-def binary_search(the_list, target):
-    lower_bound = 0
-    upper_bound = len(the_list) - 1
-    
-    while lower_bound <= upper_bound:
-        pivot = (lower_bound + upper_bound) // 2
-        pivot_value = the_list[pivot]
-        
-        if pivot_value == target:
-            print(f"Got it! Found {pivot_value} at index {the_list.index(pivot_value)}")
-            return pivot
-        if pivot_value > target:
-            upper_bound = pivot - 1
-        else:
-            lower_bound = pivot + 1
-    print(f"Can't find {target} in this list.")
-    return -1
-
 
 ##########     DRIVER CODE     ##########
 # guess_random_number(5, 0, 10)
