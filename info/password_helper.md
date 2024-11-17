@@ -4,7 +4,7 @@ Possible name? _Whipped Pass Py_
 
 ## Introduction to Method
 
-The program should begin by laying out for the user how the application can help the user create a dynamic and memorbale password system for themselves that will create a unique password for each login.
+The program should begin by laying out for the user how the application can help the user create a dynamic and memorable password system for themselves that will create a unique password for each login.
 
 The primary portion that the user must contribute are two components: 1. alphabetic string and 2. a few numbers. The user will be coached to make these selections with the idea being they will be easy for the user to remember but difficult for another person to guess.
 
@@ -28,7 +28,7 @@ A random number of characters will be replaced in each component to make them mo
 
 ## Unique per Login
 
-Lastly the user will input a few options for chracters to pull from the login domain. For example this could be the first consonant, vowel, or letter and fix it at the beginning, end, or middle of the passwrod. They may choose up to four of these type of characters based on placement within the domain (i.e. first, second, penultimate, last).
+Lastly the user will input a few options for characters to pull from the login domain. For example this could be the first consonant, vowel, or letter and fix it at the beginning, end, or middle of the password. They may choose up to four of these type of characters based on placement within the domain (i.e. first, second, penultimate, last).
 
 ## Examples and Usage
 
