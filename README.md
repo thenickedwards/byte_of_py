@@ -6,7 +6,7 @@ A Pythonic playground for practicing purposeful programming, polishing problem-s
 
 This is a repo where I have commited to pracitcing writing Python code and algorithims. Many of the directories are self-explanatory, though I will there is a table of contents below with more details.
 
-### 02 Hello World
+### 02 Hello World!
 
 ### 03 Conditionals - if, while
 
