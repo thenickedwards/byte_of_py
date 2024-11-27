@@ -4,7 +4,7 @@ A Pythonic playground for practicing purposeful programming, polishing problem-s
 
 ## 01 - The README - What's all this then?
 
-This is a repo where I have commited to pracitcing writing Python code and algorithims. Many of the directories are self-explanatory, though I will there is a table of contents below with more details.
+This is a repo where I have committed to practicing writing Python code and algorithms. Many of the directories are self-explanatory, though there is more info table of contents below.
 
 ### 02 Hello World!
 
@@ -94,9 +94,7 @@ driver code included
 
 queues, classes, validation and error logging
 
-### 29
-
-ommitted purposefully
+29 ommitted purposefully
 
 ### 30 Algorithm Practice - Searches
 
@@ -112,9 +110,7 @@ bubble sort, quicksort
 
 ### 33 Big O Notation
 
-### 34
-
-ommitted purposefully
+34 ommitted purposefully
 
 ### 35 Game - Guess a Number Program
 
