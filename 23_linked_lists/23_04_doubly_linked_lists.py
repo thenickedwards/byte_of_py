@@ -37,7 +37,7 @@ dllist.append("First Node")
 print(dllist.head.value)
 # First Node
 print(dllist.tail.value)
-# First Node
+# Last Node
 
 dllist.append("Second Node")
 # Appended new Node with value: Second Node
